@@ -1,0 +1,89 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environment variables
+.env
+.env.*
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# VSCode and other IDE/editor settings
+.vscode/
+.idea/
+*.swp
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Logs and misc
+*.log
+*.pot
+*.mo
+*.pid
+
+# Local DB or SQLite
+*.sqlite3
+
+# Uvicorn logs
+*.db
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Docker
+*.container
+*.log
+docker-compose.override.yml
+
+# macOS
+.DS_Store
+
+
+.env
