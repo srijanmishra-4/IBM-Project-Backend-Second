@@ -2,6 +2,7 @@ from fastapi import HTTPException
 from scripts.generateTest import generate_test
 
 async def generate_test_Controller(request_data: dict):
+    print("Check Inside Generate Test")
     try:
         # Extract skills and difficulty from request body
         jobRole = request_data.get("jobRole")
@@ -14,6 +15,7 @@ async def generate_test_Controller(request_data: dict):
 
         # Call the script function to generate test questions
         response = await generate_test(jobRole, difficulty , experience)
+        print("After Script ")
         return {"status": "success", "data": response}
 
     except HTTPException as e:

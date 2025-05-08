@@ -3,6 +3,7 @@ import json
 import re
 
 async def generate_test(job_role: str, difficulty: str ,experience : str ):
+    print('Inside Script')
     try:
         # Format the prompt dynamically
         prompt = f"""
@@ -60,9 +61,9 @@ async def generate_test(job_role: str, difficulty: str ,experience : str ):
         """
 
         # Call Gemini API to generate questions
-
+        print('Before Gemini')
         response = await call_gemini_api(prompt)
-        
+        print('After Gemini')
         cleaned_response = re.sub(r"```json\n(.*?)\n```", r"\1", response, flags=re.DOTALL).strip()
 
         try:
