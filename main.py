@@ -5,6 +5,9 @@ from controllers.evaluateTestController import evaluate_test_controller
 
 app = FastAPI()
 
+@app.get("/ping")
+async def ping():
+    return {"message": "Pong"}
 
 @app.post("/api/test/generate-test")
 async def generate_test_endpoint(request_data: dict):
